@@ -1,0 +1,71 @@
+/* ============================================================
+   ASSERT LABS — 01 TOKENS
+   Single source of truth. Change brand here, it changes everywhere.
+   ============================================================ */
+
+/* ---- Self-hosted variable fonts (no Google request, GDPR-clean) ---- */
+@font-face{
+  font-family:'Bricolage Grotesque';
+  src:url('../assets/fonts/bricolage-grotesque-latin-wght-normal.woff2') format('woff2-variations');
+  font-weight:200 800;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:'Inter';
+  src:url('../assets/fonts/inter-latin-wght-normal.woff2') format('woff2-variations');
+  font-weight:100 900;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:'JetBrains Mono';
+  src:url('../assets/fonts/jetbrains-mono-latin-wght-normal.woff2') format('woff2-variations');
+  font-weight:100 800;font-style:normal;font-display:swap;
+}
+
+:root{
+  /* ---- Brand palette ---- */
+  --ink:#0A0D12;          /* primary dark */
+  --ink-2:#11151D;        /* raised dark surface */
+  --ink-3:#1A2029;        /* borders on dark hover */
+  --paper:#FFFFFF;
+  --fog:#F4F5F7;          /* light section bg */
+  --line:#E6E8EC;         /* light borders */
+  --line-d:rgba(255,255,255,.09);
+
+  --amber:#FFB224;        /* signature accent — graphic use on dark */
+  --amber-2:#FFC65A;      /* hover */
+  --amber-ink:#8A5B00;    /* AA-safe amber text on white */
+  --amber-tint:#FFF7E6;   /* light amber wash */
+
+  --pass:#12B76A;         /* semantic: test pass  */
+  --fail:#F5563F;         /* semantic: test fail  */
+
+  --mut:#5F6672;          /* muted text on light (AA on white) */
+  --mut-2:#9AA1AC;
+  --mut-d:rgba(255,255,255,.58);
+  --mut-d2:rgba(255,255,255,.36);
+
+  /* ---- Type ---- */
+  --fd:'Bricolage Grotesque',system-ui,sans-serif;
+  --fb:'Inter',system-ui,-apple-system,sans-serif;
+  --fm:'JetBrains Mono',ui-monospace,'SF Mono',monospace;
+
+  /* Fluid type scale (min 380px → max 1280px viewport) */
+  --t-hero:clamp(2.6rem,1.2rem + 6vw,5rem);
+  --t-h2:clamp(1.9rem,1.1rem + 3.4vw,3.25rem);
+  --t-h3:clamp(1.05rem,1rem + .3vw,1.2rem);
+  --t-lede:clamp(1rem,.95rem + .35vw,1.17rem);
+  --t-body:1rem;
+  --t-sm:.845rem;
+  --t-mono:.78rem;
+
+  /* ---- Space (8px system) ---- */
+  --s1:.5rem;--s2:1rem;--s3:1.5rem;--s4:2rem;--s5:3rem;--s6:4rem;
+  --sec-y:clamp(4rem,4vw + 2.5rem,7rem);
+  --pad:clamp(1.25rem,4vw,3.5rem);
+  --w:1200px;
+
+  /* ---- Misc ---- */
+  --r-s:4px;--r-m:8px;--r-l:14px;
+  --shadow-l:0 24px 60px -28px rgba(10,13,18,.35);
+  --shadow-d:0 32px 80px -32px rgba(0,0,0,.85);
+  --ease:cubic-bezier(.22,1,.36,1);
+}

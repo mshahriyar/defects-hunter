@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assert Labs — Independent Software QA &amp; Testing</title>
+<meta name="description" content="Independent QA studio. We test, automate, and give every release a written verdict: ship or hold. Functional, automation, API, performance, security, mobile and accessibility testing — plus a growth practice.">
+
+<!-- Canonical + social (swap example.com for your domain) -->
+<link rel="canonical" href="https://example.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Assert Labs — Every release gets a verdict. Ship, or hold.">
+<meta property="og:description" content="Independent software QA. Real bugs with evidence, a written verdict per release, and a free 5-day pilot.">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:image" content="https://example.com/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A0D12">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/icon-192.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="css/01-tokens.css">
+<link rel="stylesheet" href="css/02-base.css">
+<link rel="stylesheet" href="css/03-components.css">
+<link rel="stylesheet" href="css/04-sections.css">
+
+<!-- Structured data (update name/url/contact at launch) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"Assert Labs",
+  "description":"Independent software QA and testing studio with a digital growth practice.",
+  "url":"https://example.com",
+  "email":"hello@assertlabs.com",
+  "address":{"@type":"PostalAddress","addressLocality":"Lahore","addressCountry":"PK"},
+  "priceRange":"$$",
+  "knowsAbout":["Software testing","Test automation","Performance testing","Security testing","Accessibility","SEO"]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><i id="pbar"></i></div>
+
+<div class="notebar" id="nb">
+  DEMO — brand, contact and rates are placeholders. See README.md, then delete this bar.
+  <button onclick="document.getElementById('nb').remove()">hide</button>
+</div>
+
+<!-- ================= NAV ================= -->
+<header class="nav">
+  <div class="wrap nav__in">
+    <a href="#" class="logo" aria-label="Assert Labs — home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#FFB224"/><path d="M9 17.2 14 22 23.5 11" stroke="#0A0D12" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Assert Labs
+    </a>
+    <nav class="nav__l" aria-label="Primary">
+      <a href="#test">Testing</a>
+      <a href="#promise">The promise</a>
+      <a href="#numbers">Reporting</a>
+      <a href="#growth">Growth</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <div class="nav__cta"><a href="#contact" class="btn btn--amber">Free 5-day pilot</a></div>
+    <button class="burger" id="bg" aria-label="Menu" aria-expanded="false" aria-controls="mn"><span></span></button>
+  </div>
+  <div class="mnav" id="mn">
+    <a href="#test">Testing</a><a href="#promise">The promise</a><a href="#numbers">Reporting</a>
+    <a href="#growth">Growth</a><a href="#pricing">Pricing</a>
+    <a href="#contact" class="btn btn--amber">Free 5-day pilot</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero on-dark">
+  <div class="wrap hero__in">
+    <div>
+      <p class="eyebrow">Independent QA · No dev arm · No bias</p>
+      <h1>Every release gets a verdict.<br><span class="hl">Ship, or hold.</span></h1>
+      <p class="lede">We're a software testing studio. We write the tests, build the automation, and put the call in writing before you release — with the evidence to back it.</p>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--amber">Start the free pilot <span class="ar">→</span></a>
+        <a href="#test" class="btn btn--ghost-d">What we test</a>
+      </div>
+      <div class="hero__pf">
+        <span><b>5 days</b> · pilot, free</span>
+        <span><b>48 hrs</b> · first audit back</span>
+        <span><b>ISTQB</b> · aligned process</span>
+      </div>
+    </div>
+
+    <div class="console" id="con">
+      <div class="console__bar">
+        <span class="dot" style="background:#FF5F57"></span>
+        <span class="dot" style="background:#FEBC2E"></span>
+        <span class="dot" style="background:#28C840"></span>
+        <span class="console__f">npx playwright test — release/2.4</span>
+        <span class="console__live"><i></i>Live</span>
+        <button class="console__r" id="rr">Run again</button>
+      </div>
+      <div class="console__b" id="cb" aria-label="Sample test run"></div>
+      <div class="console__foot">
+        <span><b>BUG-0417</b> filed · P1</span>
+        <span>evidence: recording + HAR</span>
+        <span>caught in staging — not by a customer</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TICKER + INDUSTRIES ================= -->
+<div class="tick" aria-hidden="true">
+  <div class="tick__row" id="tk">
+    <div class="tick__set">
+      <span class="tick__i">Playwright</span><span class="tick__i">Cypress</span><span class="tick__i">Selenium</span>
+      <span class="tick__i">Appium</span><span class="tick__i">Postman</span><span class="tick__i">k6</span>
+      <span class="tick__i">JMeter</span><span class="tick__i">OWASP ZAP</span><span class="tick__i">Burp Suite</span>
+      <span class="tick__i">BrowserStack</span><span class="tick__i">axe</span><span class="tick__i">TestRail</span>
+      <span class="tick__i">Jira</span><span class="tick__i">GitHub Actions</span>
+    </div>
+  </div>
+</div>
+<div class="inds on-dark">
+  <div class="wrap inds__in">
+    <span class="inds__l">Built for teams in</span>
+    <div class="inds__c">
+      <span class="chip">SaaS</span><span class="chip">Fintech</span><span class="chip">E-commerce</span>
+      <span class="chip">Healthcare</span><span class="chip">EdTech</span><span class="chip">Marketplaces</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section class="sec" id="test">
+  <div class="wrap">
+    <div class="shead rv">
+      <p class="eyebrow"><b>01</b>Testing services</p>
+      <h2>Eight ways software breaks. We cover all of them.</h2>
+      <p class="lede">Every engagement starts with a risk map — you pay for coverage that moves your defect escape rate, not for coverage.</p>
+    </div>
+    <div class="idx rv-kids">
+      <div class="row"><span class="row__n">01</span><h3>Functional &amp; regression</h3><p class="row__d">Every user journey, every edge case, every browser — before each release.</p><span class="row__t">TestRail · BrowserStack</span></div>
+      <div class="row"><span class="row__n">02</span><h3>Test automation</h3><p class="row__d">A real framework that runs on every pull request. We build it, we maintain it.</p><span class="row__t">Playwright · Cypress · CI/CD</span></div>
+      <div class="row"><span class="row__n">03</span><h3>API &amp; integration</h3><p class="row__d">Contract checks and failure simulation, so a breaking change never ships quietly.</p><span class="row__t">Postman · Pact · WireMock</span></div>
+      <div class="row"><span class="row__n">04</span><h3>Performance &amp; load</h3><p class="row__d">We find where your system bends — and which component gave first.</p><span class="row__t">k6 · JMeter · Grafana</span></div>
+      <div class="row"><span class="row__n">05</span><h3>Security</h3><p class="row__d">OWASP Top 10 assessment with reproducible proof for every finding.</p><span class="row__t">ZAP · Burp · Snyk</span></div>
+      <div class="row"><span class="row__n">06</span><h3>Mobile</h3><p class="row__d">Real devices, bad networks, low battery. Not a simulator that always behaves.</p><span class="row__t">Appium · Firebase Test Lab</span></div>
+      <div class="row"><span class="row__n">07</span><h3>Accessibility</h3><p class="row__d">WCAG 2.2 AA audits with screen-reader walkthroughs, not just automated scans.</p><span class="row__t">axe · NVDA · VoiceOver</span></div>
+      <div class="row"><span class="row__n">08</span><h3>QA audit &amp; strategy</h3><p class="row__d">For teams that already test but keep shipping bugs. We find where the process leaks.</p><span class="row__t">Risk map · Quality gates</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROMISES ================= -->
+<section class="sec sec--ink" id="promise">
+  <div class="wrap">
+    <div class="shead rv">
+      <p class="eyebrow"><b>02</b>The promise</p>
+      <h2 style="color:#fff">Four things we put in the contract.</h2>
+      <p class="lede">Not values on a wall. Terms you can hold us to.</p>
+    </div>
+    <div class="proms rv-kids">
+      <div class="prom"><div class="prom__n">P—01</div><h3>Every bug ships with proof</h3><p>Steps, screen recording, network log. If your developer can't reproduce it in a minute, that's our failure, not theirs.</p></div>
+      <div class="prom"><div class="prom__n">P—02</div><h3>A written verdict, every release</h3><p>Ship or hold, with the reason. You'll never guess whether it's safe to press the button.</p></div>
+      <div class="prom"><div class="prom__n">P—03</div><h3>Same-day response</h3><p>Anything raised in your working hours gets an answer in your working hours. It's in the SLA.</p></div>
+      <div class="prom"><div class="prom__n">P—04</div><h3>No lock-in</h3><p>Month to month after the first term, 30 days' notice. If we're not finding bugs, you shouldn't be paying us.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPECIMEN ================= -->
+<section class="sec sec--fog">
+  <div class="wrap spec rv">
+    <div>
+      <p class="eyebrow"><b>03</b>A real deliverable</p>
+      <h2>This is what a bug looks like when we file it.</h2>
+      <p class="lede">No "login sometimes broken" tickets. Severity, revenue impact, exact steps, evidence attached — so your developer fixes it the same day instead of arguing about whether it exists.</p>
+    </div>
+    <div class="bug">
+      <div class="bug__tags">
+        <span class="tag tag--f">P1 · High</span><span class="tag tag--g">BUG-0417</span>
+        <span class="tag tag--g">Checkout</span><span class="tag tag--g">Reproducible 5/5</span>
+      </div>
+      <h3>Discount code applies twice when payment is retried after a card decline</h3>
+      <dl>
+        <dt>Steps</dt><dd>Add item → apply SAVE20 → pay with declining card → retry with valid card</dd>
+        <dt>Expected</dt><dd>Total $80.00 — discount once</dd>
+        <dt>Actual</dt><dd><b>$60.00 charged</b> — discount twice</dd>
+        <dt>Impact</dt><dd>Revenue loss on every retried payment</dd>
+        <dt>Evidence</dt><dd>Recording, HAR file, request log attached</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REPORTING / KPIs ================= -->
+<section class="sec sec--ink" id="numbers">
+  <div class="wrap">
+    <div class="shead rv">
+      <p class="eyebrow"><b>04</b>Reporting</p>
+      <h2 style="color:#fff">Four numbers, every month. No 40-page decks.</h2>
+      <p class="lede">This is the scorecard your leadership sees. Sample data below — yours comes from your builds.</p>
+    </div>
+    <div class="score rv-kids" id="score">
+      <div class="kpi" style="--kc:var(--pass)">
+        <div class="kpi__v"><span data-n="0">0</span></div>
+        <div class="kpi__l">Defects that escaped to users last release</div>
+        <div class="kpi__m">Target · always 0</div>
+      </div>
+      <div class="kpi" style="--kc:var(--amber)">
+        <div class="kpi__v"><span data-n="74">0</span><small>%</small></div>
+        <div class="kpi__l">Regression suite automated and running in CI</div>
+        <div class="kpi__m">Grows every sprint</div>
+      </div>
+      <div class="kpi" style="--kc:var(--amber)">
+        <div class="kpi__v"><span data-n="11">0</span><small>min</small></div>
+        <div class="kpi__l">Full automated regression, per run</div>
+        <div class="kpi__m">Was 3 hrs manual</div>
+      </div>
+      <div class="kpi" style="--kc:var(--fail)">
+        <div class="kpi__v"><span data-n="1">0</span></div>
+        <div class="kpi__l">Open release blocker — BUG-0417, checkout</div>
+        <div class="kpi__m">Verdict · hold</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="shead rv">
+      <p class="eyebrow"><b>05</b>How it runs</p>
+      <h2>Call to coverage in two weeks.</h2>
+    </div>
+    <div class="steps rv-kids">
+      <div class="st"><div class="st__n">STEP 1</div><h3>Discovery call</h3><p>What you ship, how often, and where bugs keep escaping.</p><div class="st__m">30 min · free</div></div>
+      <div class="st"><div class="st__n">STEP 2</div><h3>Free pilot</h3><p>One module. Real test cases, real defects filed in your tracker.</p><div class="st__m">5 days · free</div></div>
+      <div class="st"><div class="st__n">STEP 3</div><h3>Scope &amp; SLA</h3><p>What gets tested, on what cadence, with a fixed monthly number.</p><div class="st__m">Signed in writing</div></div>
+      <div class="st"><div class="st__n">STEP 4</div><h3>Embedded delivery</h3><p>Your standups, your Jira. Automation grows, regression time shrinks.</p><div class="st__m">Verdict every release</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GROWTH ================= -->
+<section class="sec sec--ink" id="growth">
+  <div class="wrap">
+    <div class="shead rv">
+      <p class="eyebrow"><b>06</b>Second practice — Assert Growth</p>
+      <h2 style="color:#fff">Product solid, nobody's found it yet?</h2>
+      <p class="lede">We run marketing the way we run QA: baseline, change one thing, verify. No vanity metrics.</p>
+    </div>
+    <div class="gg rv-kids">
+      <div class="g"><span class="g__n">G1</span><div><h3>Web design &amp; build</h3><p>Fast, conversion-focused sites. Core Web Vitals green at handover.</p></div></div>
+      <div class="g"><span class="g__n">G2</span><div><h3>Technical SEO</h3><p>Crawl, indexation, schema, speed — the work that lets everything rank.</p></div></div>
+      <div class="g"><span class="g__n">G3</span><div><h3>Content strategy</h3><p>Keywords mapped to buying intent, briefs your writers can execute.</p></div></div>
+      <div class="g"><span class="g__n">G4</span><div><h3>Link building</h3><p>Editorial placements. Every link verified live, with its metrics.</p></div></div>
+      <div class="g"><span class="g__n">G5</span><div><h3>Paid search &amp; social</h3><p>Google, Meta, LinkedIn — with tracking wired up properly first.</p></div></div>
+      <div class="g"><span class="g__n">G6</span><div><h3>Analytics &amp; CRO</h3><p>GA4 that reflects reality, A/B tests on pages that carry revenue.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="sec sec--fog" id="pricing">
+  <div class="wrap">
+    <div class="shead rv">
+      <p class="eyebrow"><b>07</b>Pricing</p>
+      <h2>Published rates. No quote games.</h2>
+    </div>
+    <div class="rv">
+      <div class="tog" role="tablist" aria-label="Pricing categories">
+        <button role="tab" aria-selected="true" data-t="qa">Testing</button>
+        <button role="tab" aria-selected="false" data-t="gr">Growth</button>
+      </div>
+
+      <div class="plans" data-p="qa">
+        <div class="plan">
+          <h3>Pilot</h3><p class="plan__s">Prove it works before you pay anything.</p>
+          <div class="plan__p">Free</div><div class="plan__n">5 working days · one module</div>
+          <ul><li>25 test cases written &amp; executed</li><li>Real defects filed in your tracker</li><li>Coverage gap assessment</li></ul>
+          <a href="#contact" class="btn btn--ghost">Claim a slot</a>
+        </div>
+        <div class="plan plan--hi">
+          <span class="plan__flag">Most common</span>
+          <h3>Sprint QA</h3><p class="plan__s">A tester embedded in your sprint, part-time.</p>
+          <div class="plan__p">$1,400<small>/mo</small></div><div class="plan__n">~80 hrs · manual + regression</div>
+          <ul><li>Functional + regression, every sprint</li><li>Cross-browser &amp; mobile-web matrix</li><li>Evidence-backed defect reports</li><li>Ship / hold verdict per release</li></ul>
+          <a href="#contact" class="btn btn--ink">Book a scoping call</a>
+        </div>
+        <div class="plan">
+          <h3>Dedicated engineer</h3><p class="plan__s">Full-time, automation included.</p>
+          <div class="plan__p">$3,200<small>/mo</small></div><div class="plan__n">160 hrs · one named engineer</div>
+          <ul><li>Everything in Sprint QA</li><li>Automation framework, built &amp; owned</li><li>API coverage + CI/CD gating</li><li>Works only on your product</li></ul>
+          <a href="#contact" class="btn btn--ghost">Book a scoping call</a>
+        </div>
+      </div>
+
+      <div class="plans" data-p="gr" hidden>
+        <div class="plan">
+          <h3>Launch</h3><p class="plan__s">Foundations first.</p>
+          <div class="plan__p">$900<small>/mo</small></div><div class="plan__n">3-month minimum</div>
+          <ul><li>Technical SEO audit + fixes</li><li>Keyword research &amp; page mapping</li><li>On-page optimisation</li><li>Monthly report, real numbers</li></ul>
+          <a href="#contact" class="btn btn--ghost">Start here</a>
+        </div>
+        <div class="plan plan--hi">
+          <span class="plan__flag">Best value</span>
+          <h3>Grow</h3><p class="plan__s">Content and links, compounding monthly.</p>
+          <div class="plan__p">$2,200<small>/mo</small></div><div class="plan__n">6-month minimum</div>
+          <ul><li>Everything in Launch</li><li>4 content pieces / month</li><li>4–6 editorial links, verified live</li><li>Monthly strategy call</li></ul>
+          <a href="#contact" class="btn btn--ink">Book a growth call</a>
+        </div>
+        <div class="plan">
+          <h3>Scale</h3><p class="plan__s">Multi-channel, paid in the mix.</p>
+          <div class="plan__p">$4,500<small>/mo</small></div><div class="plan__n">+ ad spend, billed direct</div>
+          <ul><li>Everything in Grow, higher volume</li><li>Digital PR &amp; data campaigns</li><li>Google + Meta ads management</li><li>CRO with A/B testing</li></ul>
+          <a href="#contact" class="btn btn--ghost">Book a growth call</a>
+        </div>
+      </div>
+
+      <div class="rates">
+        <b>Hourly</b> — QA $22 · Senior / automation $34 · Security &amp; performance $45
+        &nbsp;·&nbsp; <b>Bundle</b> — QA + Growth together: second practice −15%
+        &nbsp;·&nbsp; <b>Website build</b> — one-off from $1,200
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEW WALL ================= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="shead rv">
+      <p class="eyebrow"><b>08</b>Reviews</p>
+      <h2>We could fake these. We test software for a living.</h2>
+      <p class="lede">So the wall stays empty until it's real. Every review here will link to a person who exists and a project we shipped.</p>
+    </div>
+    <div class="wall rv-kids">
+      <div class="slot slot--live">
+        <span class="slot__n">Slot 001 · Reserved</span><span class="slot__q">"</span>
+        <p>Our first client gets the pilot free, our sharpest engineers, and this spot — permanently. Come collect it.</p>
+      </div>
+      <div class="slot">
+        <span class="slot__n">Slot 002 · Open</span><span class="slot__q">"</span>
+        <p>Waiting on client #2. Verified name, company and live link — or it doesn't go up.</p>
+      </div>
+      <div class="slot">
+        <span class="slot__n">Slot 003 · Open</span><span class="slot__q">"</span>
+        <p>If a QA agency's reviews can't survive scrutiny, what does that say about their testing?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec sec--fog">
+  <div class="wrap">
+    <div class="shead rv">
+      <p class="eyebrow"><b>09</b>Straight answers</p>
+      <h2>Before you ask.</h2>
+    </div>
+    <div class="faq rv">
+      <details class="q">
+        <summary>Why an outside QA team instead of one more developer?<span class="q__ic"></span></summary>
+        <div class="q__a">Developers test what they built the way they built it — you can't easily find your own assumption. We arrive without it. And since we have no dev arm, we never grade our own homework.</div>
+      </details>
+      <details class="q">
+        <summary>What do you need from us to start?<span class="q__ic"></span></summary>
+        <div class="q__a">Staging access, test accounts, whatever requirements exist (rough is fine), your issue tracker, and one person who can answer questions. Discovery call within 48 hours; pilot can start the following Monday.</div>
+      </details>
+      <details class="q">
+        <summary>Is our code and data safe?<span class="q__ic"></span></summary>
+        <div class="q__a">NDA before the first call if you want one. We work in staging with synthetic data and never ask for production database access. HIPAA / GDPR / PCI scope — tell us early, it changes the plan.</div>
+      </details>
+      <details class="q">
+        <summary>Contract terms?<span class="q__ic"></span></summary>
+        <div class="q__a">QA retainers: month to month after an initial three-month term, 30 days' notice. Growth needs longer because SEO compounds — three months on Launch, six on Grow. Fixed projects: 50% up front, 50% on delivery.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta on-dark" id="contact">
+  <div class="wrap cta__in">
+    <div>
+      <p class="eyebrow"><b>10</b>Start here</p>
+      <h2>Let's find out what's broken.</h2>
+      <p class="lede">One call, then a free 5-day pilot on a module of your choice. You get real bugs and a risk map — whether or not you hire us after.</p>
+      <div class="cta__meta">
+        <a href="mailto:hello@assertlabs.com">hello@assertlabs.com</a>
+        <span>+92 300 0000000</span>
+        <span>Lahore, PK · 9:00–18:00 PKT</span>
+      </div>
+    </div>
+    <form class="form" id="fm">
+      <div><label for="n">Name</label><input id="n" name="name" type="text" placeholder="Jane Doe" autocomplete="name" required></div>
+      <div><label for="e">Work email</label><input id="e" name="email" type="email" placeholder="jane@company.com" autocomplete="email" required></div>
+      <div><label for="w">What do you need</label>
+        <select id="w" name="need">
+          <option>Free 5-day QA pilot</option><option>QA audit / test strategy</option>
+          <option>Test automation build</option><option>Performance or security testing</option>
+          <option>Growth — SEO, content, links</option><option>Website build</option>
+        </select>
+      </div>
+      <div><label for="m">What are you building</label><textarea id="m" name="message" placeholder="B2B SaaS, React + Node, shipping every two weeks. Bugs keep reaching customers."></textarea></div>
+      <button type="submit" class="btn btn--amber">Send it <span class="ar">→</span></button>
+      <p class="form__f" id="fn">Reply within one working day. No newsletter.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <a href="#" class="logo">
+          <svg viewBox="0 0 32 32" aria-hidden="true" width="24" height="24"><rect width="32" height="32" rx="6" fill="#FFB224"/><path d="M9 17.2 14 22 23.5 11" stroke="#0A0D12" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Assert Labs
+        </a>
+        <p class="foot__t">Independent software quality. We find the bug before your users do — and put the verdict in writing.</p>
+      </div>
+      <nav aria-label="Footer — services">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#test">Functional &amp; regression</a></li>
+          <li><a href="#test">Test automation</a></li>
+          <li><a href="#test">Performance &amp; security</a></li>
+          <li><a href="#growth">SEO &amp; link building</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer — company">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#promise">The promise</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="mailto:hello@assertlabs.com">hello@assertlabs.com</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="foot__bot">
+      <span>© 2026 Assert Labs</span>
+      <span>Independent software quality · Lahore, PK</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
