@@ -1,4 +1,4 @@
-# Assert Labs — Website
+# Defects Hunter — Website
 
 Production-ready static site. No build step, no framework runtime, no external
 requests (fonts are self-hosted). Drag the folder onto any static host and it's live.
