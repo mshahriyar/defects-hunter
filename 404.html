@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Page not found | Defects Hunter</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/01-tokens.css">
+<link rel="stylesheet" href="css/02-base.css">
+<link rel="stylesheet" href="css/03-components.css">
+<style>
+.e{min-height:100vh;display:grid;place-items:center;background:var(--ink);color:#fff;text-align:center;padding:2rem}
+.e__code{font-family:var(--fm);font-size:.8rem;color:var(--mut-d);letter-spacing:.2em}
+.e h1{font-size:clamp(3rem,10vw,6rem);margin:.4rem 0 1rem}
+.e__stamp{display:inline-block;border:3px solid var(--amber);color:var(--amber);border-radius:6px;
+  font-family:var(--fm);font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  padding:.6rem 1.1rem;transform:rotate(-7deg);margin:.4rem 0 1.4rem}
+.e p{color:var(--mut-d);max-width:40ch;margin:0 auto 1.6rem}
+</style>
+</head>
+<body>
+<main class="e on-dark">
+  <div>
+    <div class="e__code">HTTP 404</div>
+    <h1>Not found.</h1>
+    <div class="e__stamp">Page: does not exist</div>
+    <p>We test for missing pages too. This one failed the existence check — the link is old or mistyped.</p>
+    <a href="/" class="btn btn--amber">Back to the homepage <span class="ar">→</span></a>
+  </div>
+</main>
+</body>
+</html>

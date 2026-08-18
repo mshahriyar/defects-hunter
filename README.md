@@ -23,6 +23,9 @@ assert-labs/
 ├── robots.txt
 ├── sitemap.xml
 ├── site.webmanifest
+├── 404.html                ← branded not-found page (Netlify auto-serves)
+├── _headers                ← security + cache headers (Netlify)
+├── QA-REPORT.md            ← test evidence for this build
 └── README.md               ← you are here
 ```
 
@@ -44,13 +47,18 @@ Amber text on white uses `#8A5B00` for WCAG AA contrast.
 
 ## 🔴 Before launch — 6 edits
 
-1. **Brand name** — search `Assert Labs` in `index.html` (title, nav, footer, JSON-LD, meta).
+1. **Brand name** — search `Defects Hunter` in `index.html` (title, nav, footer, JSON-LD, meta).
 2. **Domain** — search `example.com` in `index.html`, `robots.txt`, `sitemap.xml`.
-3. **Contact** — search `hello@assertlabs.com` and `+92 300` in `index.html`.
-4. **Form backend** — in `js/main.js`, replace the submit handler:
-   sign up at formspree.io (free), then on the `<form>` set
-   `action="https://formspree.io/f/YOUR_ID" method="POST"` and delete the JS
-   `submit` block. Two minutes.
+3. **Contact** — search `hello@defectshunter.com` and `+92 300` in `index.html`.
+4. **Form / leads** — the form is pre-wired for **Netlify Forms** (works only when
+   the site is hosted on Netlify). After first deploy: Netlify dashboard → your site
+   → **Forms** → you'll see form "lead" → **Notifications → Add → Email notification**
+   → your email. Every submission lands in your inbox + stays in the dashboard.
+   Free tier: 100 submissions/month. Honeypot spam filter included.
+   *Hosting somewhere else?* Use formspree.io instead: create a form, then on the
+   `<form>` tag replace the netlify attributes with
+   `action="https://formspree.io/f/YOUR_ID"` and in `js/main.js` change
+   `fetch('/'` to `fetch(form.action`.
 5. **Rates** — confirm pricing section numbers are what you'll actually honor.
 6. **Delete the amber demo bar** — remove the `<div class="notebar">…</div>` block
    at the top of `index.html`.

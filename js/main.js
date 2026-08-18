@@ -68,7 +68,7 @@
     });
     var st = document.createElement('div');
     st.className = 'stamp';
-    st.innerHTML = 'Release: Hold<small>Assert Labs · QA verdict</small>';
+    st.innerHTML = 'Release: Hold<small>Defects Hunter · QA verdict</small>';
     cb.appendChild(st);
     setTimeout(function () { st.classList.add('show'); }, rm ? 0 : L.length * 260 + 320);
   }
@@ -131,11 +131,24 @@
     });
   });
 
-  /* ---------- form (wire a backend before launch) ---------- */
+  /* ---------- form → Netlify Forms (AJAX, stays on page) ---------- */
   document.getElementById('fm').addEventListener('submit', function (e) {
     e.preventDefault();
-    var f = document.getElementById('fn');
-    f.textContent = 'Form not wired yet — connect Formspree / Web3Forms (see README).';
-    f.style.color = '#FFB224';
+    var form = e.target, f = document.getElementById('fn');
+    var btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    }).then(function (r) {
+      if (!r.ok) throw 0;
+      form.reset();
+      f.textContent = 'Sent. We\'ll reply within one working day.';
+      f.style.color = '#12B76A';
+    }).catch(function () {
+      f.textContent = 'Could not send — email us directly: hello@defectshunter.com';
+      f.style.color = '#FFB224';
+    }).finally(function () { btn.disabled = false; });
   });
 })();

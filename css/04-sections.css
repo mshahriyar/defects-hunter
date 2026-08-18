@@ -147,7 +147,7 @@
 @media(max-width:760px){.foot__grid{grid-template-columns:1fr}}
 .foot .logo{color:#fff;font-size:1rem;margin-bottom:.8rem}
 .foot__t{max-width:34ch;line-height:1.6;font-size:.8rem}
-.foot h4{font-family:var(--fm);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mut-d2);margin-bottom:.9rem;font-weight:500}
+.foot .foot__h{font-family:var(--fm);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mut-d2);margin-bottom:.9rem;font-weight:500}
 .foot ul{list-style:none;display:grid;gap:.5rem}
 .foot a:hover{color:#fff}
 .foot__bot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-top:1.3rem;font-family:var(--fm);font-size:.68rem;color:var(--mut-d2)}

@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Assert Labs — Independent Software QA &amp; Testing</title>
-<meta name="description" content="Independent QA studio. We test, automate, and give every release a written verdict: ship or hold. Functional, automation, API, performance, security, mobile and accessibility testing — plus a growth practice.">
+<title>Software Testing &amp; QA Services — Defects Hunter</title>
+<meta name="description" content="Independent software testing and QA services: manual testing, test automation, API, performance, security, mobile and accessibility testing. Free 3-day pilot, evidence-backed bug reports, a written ship/hold verdict on every release.">
 
-<!-- Canonical + social (swap example.com for your domain) -->
-<link rel="canonical" href="https://example.com/">
+<!-- Canonical + social -->
+<link rel="canonical" href="https://defectshunter.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Assert Labs — Every release gets a verdict. Ship, or hold.">
-<meta property="og:description" content="Independent software QA. Real bugs with evidence, a written verdict per release, and a free 5-day pilot.">
-<meta property="og:url" content="https://example.com/">
-<meta property="og:image" content="https://example.com/assets/img/og-image.png">
+<meta property="og:title" content="Defects Hunter — Every release gets a verdict. Ship, or hold.">
+<meta property="og:description" content="Independent software QA. Real bugs with evidence, a written verdict per release, and a free 3-day pilot.">
+<meta property="og:url" content="https://defectshunter.com/">
+<meta property="og:image" content="https://defectshunter.com/assets/img/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0A0D12">
 
@@ -33,13 +33,42 @@
 {
   "@context":"https://schema.org",
   "@type":"ProfessionalService",
-  "name":"Assert Labs",
-  "description":"Independent software QA and testing studio with a digital growth practice.",
-  "url":"https://example.com",
-  "email":"hello@assertlabs.com",
-  "address":{"@type":"PostalAddress","addressLocality":"Lahore","addressCountry":"PK"},
+  "name":"Defects Hunter",
+  "description":"Independent software testing and QA services studio with a digital growth practice.",
+  "url":"https://defectshunter.com",
+  "email":"hello@defectshunter.com",
+  "address":{"@type":"PostalAddress","addressLocality":"Dubai","addressCountry":"AE"},
   "priceRange":"$$",
-  "knowsAbout":["Software testing","Test automation","Performance testing","Security testing","Accessibility","SEO"]
+  "hasOfferCatalog":{
+    "@type":"OfferCatalog","name":"Testing services",
+    "itemListElement":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Functional & regression testing"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Test automation"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"API & integration testing"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Performance & load testing"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Security testing"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mobile app testing"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Accessibility testing"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"QA audit & test strategy"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"SEO & link building"}}
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Why hire an outside QA team instead of one more developer?",
+     "acceptedAnswer":{"@type":"Answer","text":"Developers test what they built the way they built it — it is hard to find your own assumption. An independent QA team arrives without it, and since we have no development arm, we never grade our own homework."}},
+    {"@type":"Question","name":"What do you need from us to start?",
+     "acceptedAnswer":{"@type":"Answer","text":"Staging access, test accounts, whatever requirements exist, your issue tracker, and one person who can answer questions. Discovery call within 48 hours; the free 3-day pilot can start the following Monday."}},
+    {"@type":"Question","name":"Is our code and data safe?",
+     "acceptedAnswer":{"@type":"Answer","text":"NDA before the first call if you want one. We work in staging environments with synthetic data and never ask for production database access. HIPAA, GDPR or PCI scope changes the plan, so tell us early."}},
+    {"@type":"Question","name":"What are the contract terms?",
+     "acceptedAnswer":{"@type":"Answer","text":"QA retainers run month to month after an initial three-month term with 30 days' notice. Growth retainers need three to six months because SEO compounds. Fixed projects are billed 50% up front and 50% on delivery."}}
+  ]
 }
 </script>
 </head>
@@ -48,17 +77,17 @@
 <a class="skip" href="#main">Skip to content</a>
 <div class="progress" aria-hidden="true"><i id="pbar"></i></div>
 
-<div class="notebar" id="nb">
-  DEMO — brand, contact and rates are placeholders. See README.md, then delete this bar.
+<div class="notebar" id="nb" role="region" aria-label="Demo notice">
+  PRE-LAUNCH — form goes live after Netlify deploy (see README). Delete this bar before sharing.
   <button onclick="document.getElementById('nb').remove()">hide</button>
 </div>
 
 <!-- ================= NAV ================= -->
 <header class="nav">
   <div class="wrap nav__in">
-    <a href="#" class="logo" aria-label="Assert Labs — home">
+    <a href="#" class="logo" aria-label="Defects Hunter — home">
       <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#FFB224"/><path d="M9 17.2 14 22 23.5 11" stroke="#0A0D12" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Assert Labs
+      Defects Hunter
     </a>
     <nav class="nav__l" aria-label="Primary">
       <a href="#test">Testing</a>
@@ -67,13 +96,13 @@
       <a href="#growth">Growth</a>
       <a href="#pricing">Pricing</a>
     </nav>
-    <div class="nav__cta"><a href="#contact" class="btn btn--amber">Free 5-day pilot</a></div>
+    <div class="nav__cta"><a href="#contact" class="btn btn--amber">Free 3-day pilot</a></div>
     <button class="burger" id="bg" aria-label="Menu" aria-expanded="false" aria-controls="mn"><span></span></button>
   </div>
   <div class="mnav" id="mn">
     <a href="#test">Testing</a><a href="#promise">The promise</a><a href="#numbers">Reporting</a>
     <a href="#growth">Growth</a><a href="#pricing">Pricing</a>
-    <a href="#contact" class="btn btn--amber">Free 5-day pilot</a>
+    <a href="#contact" class="btn btn--amber">Free 3-day pilot</a>
   </div>
 </header>
 
@@ -91,7 +120,7 @@
         <a href="#test" class="btn btn--ghost-d">What we test</a>
       </div>
       <div class="hero__pf">
-        <span><b>5 days</b> · pilot, free</span>
+        <span><b>3 days</b> · pilot, free</span>
         <span><b>48 hrs</b> · first audit back</span>
         <span><b>ISTQB</b> · aligned process</span>
       </div>
@@ -144,7 +173,7 @@
     <div class="shead rv">
       <p class="eyebrow"><b>01</b>Testing services</p>
       <h2>Eight ways software breaks. We cover all of them.</h2>
-      <p class="lede">Every engagement starts with a risk map — you pay for coverage that moves your defect escape rate, not for coverage.</p>
+      <p class="lede">Manual and automated software testing services — functional, API, performance, security, mobile and accessibility — scoped by a risk map, so you pay for what moves your defect escape rate.</p>
     </div>
     <div class="idx rv-kids">
       <div class="row"><span class="row__n">01</span><h3>Functional &amp; regression</h3><p class="row__d">Every user journey, every edge case, every browser — before each release.</p><span class="row__t">TestRail · BrowserStack</span></div>
@@ -243,7 +272,7 @@
     </div>
     <div class="steps rv-kids">
       <div class="st"><div class="st__n">STEP 1</div><h3>Discovery call</h3><p>What you ship, how often, and where bugs keep escaping.</p><div class="st__m">30 min · free</div></div>
-      <div class="st"><div class="st__n">STEP 2</div><h3>Free pilot</h3><p>One module. Real test cases, real defects filed in your tracker.</p><div class="st__m">5 days · free</div></div>
+      <div class="st"><div class="st__n">STEP 2</div><h3>Free pilot</h3><p>One module. Real test cases, real defects filed in your tracker.</p><div class="st__m">3 days · free</div></div>
       <div class="st"><div class="st__n">STEP 3</div><h3>Scope &amp; SLA</h3><p>What gets tested, on what cadence, with a fixed monthly number.</p><div class="st__m">Signed in writing</div></div>
       <div class="st"><div class="st__n">STEP 4</div><h3>Embedded delivery</h3><p>Your standups, your Jira. Automation grows, regression time shrinks.</p><div class="st__m">Verdict every release</div></div>
     </div>
@@ -254,7 +283,7 @@
 <section class="sec sec--ink" id="growth">
   <div class="wrap">
     <div class="shead rv">
-      <p class="eyebrow"><b>06</b>Second practice — Assert Growth</p>
+      <p class="eyebrow"><b>06</b>Second practice — Growth</p>
       <h2 style="color:#fff">Product solid, nobody's found it yet?</h2>
       <p class="lede">We run marketing the way we run QA: baseline, change one thing, verify. No vanity metrics.</p>
     </div>
@@ -285,21 +314,21 @@
       <div class="plans" data-p="qa">
         <div class="plan">
           <h3>Pilot</h3><p class="plan__s">Prove it works before you pay anything.</p>
-          <div class="plan__p">Free</div><div class="plan__n">5 working days · one module</div>
-          <ul><li>25 test cases written &amp; executed</li><li>Real defects filed in your tracker</li><li>Coverage gap assessment</li></ul>
+          <div class="plan__p">Free</div><div class="plan__n">3 working days · one module</div>
+          <ul><li>10 test cases written &amp; executed</li><li>5 real defects filed in your tracker</li><li>Coverage gap assessment</li></ul>
           <a href="#contact" class="btn btn--ghost">Claim a slot</a>
         </div>
         <div class="plan plan--hi">
           <span class="plan__flag">Most common</span>
-          <h3>Sprint QA</h3><p class="plan__s">A tester embedded in your sprint, part-time.</p>
-          <div class="plan__p">$1,400<small>/mo</small></div><div class="plan__n">~80 hrs · manual + regression</div>
+          <h3>QA Audit</h3><p class="plan__s">A tester embedded in your sprint, part-time.</p>
+          <div class="plan__p">$1,500<small>/mo</small></div><div class="plan__n">~80 hrs · manual + regression</div>
           <ul><li>Functional + regression, every sprint</li><li>Cross-browser &amp; mobile-web matrix</li><li>Evidence-backed defect reports</li><li>Ship / hold verdict per release</li></ul>
           <a href="#contact" class="btn btn--ink">Book a scoping call</a>
         </div>
         <div class="plan">
           <h3>Dedicated engineer</h3><p class="plan__s">Full-time, automation included.</p>
-          <div class="plan__p">$3,200<small>/mo</small></div><div class="plan__n">160 hrs · one named engineer</div>
-          <ul><li>Everything in Sprint QA</li><li>Automation framework, built &amp; owned</li><li>API coverage + CI/CD gating</li><li>Works only on your product</li></ul>
+          <div class="plan__p">$4,000<small>/mo</small></div><div class="plan__n">160 hrs · one named engineer</div>
+          <ul><li>Everything in QA Audit</li><li>Automation framework, built &amp; owned</li><li>API coverage + CI/CD gating</li><li>Works only on your product</li></ul>
           <a href="#contact" class="btn btn--ghost">Book a scoping call</a>
         </div>
       </div>
@@ -345,15 +374,15 @@
     </div>
     <div class="wall rv-kids">
       <div class="slot slot--live">
-        <span class="slot__n">Slot 001 · Reserved</span><span class="slot__q">"</span>
+        <span class="slot__n">Slot 001 · Reserved</span><span class="slot__q" aria-hidden="true">"</span>
         <p>Our first client gets the pilot free, our sharpest engineers, and this spot — permanently. Come collect it.</p>
       </div>
       <div class="slot">
-        <span class="slot__n">Slot 002 · Open</span><span class="slot__q">"</span>
+        <span class="slot__n">Slot 002 · Open</span><span class="slot__q" aria-hidden="true">"</span>
         <p>Waiting on client #2. Verified name, company and live link — or it doesn't go up.</p>
       </div>
       <div class="slot">
-        <span class="slot__n">Slot 003 · Open</span><span class="slot__q">"</span>
+        <span class="slot__n">Slot 003 · Open</span><span class="slot__q" aria-hidden="true">"</span>
         <p>If a QA agency's reviews can't survive scrutiny, what does that say about their testing?</p>
       </div>
     </div>
@@ -394,19 +423,21 @@
     <div>
       <p class="eyebrow"><b>10</b>Start here</p>
       <h2>Let's find out what's broken.</h2>
-      <p class="lede">One call, then a free 5-day pilot on a module of your choice. You get real bugs and a risk map — whether or not you hire us after.</p>
+      <p class="lede">One call, then a free 3-day pilot on a module of your choice. You get real bugs and a risk map — whether or not you hire us after.</p>
       <div class="cta__meta">
-        <a href="mailto:hello@assertlabs.com">hello@assertlabs.com</a>
-        <span>+92 300 0000000</span>
-        <span>Lahore, PK · 9:00–18:00 PKT</span>
+        <a href="mailto:hello@defectshunter.com">hello@defectshunter.com</a>
+        <span>+971 50 376 2617</span>
+        <span>Al Jawahra Apartment, Port Saeed, Dubai</span>
       </div>
     </div>
-    <form class="form" id="fm">
+    <form class="form" id="fm" name="lead" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="lead">
+      <p style="display:none" aria-hidden="true"><label>Leave this empty: <input name="bot-field"></label></p>
       <div><label for="n">Name</label><input id="n" name="name" type="text" placeholder="Jane Doe" autocomplete="name" required></div>
       <div><label for="e">Work email</label><input id="e" name="email" type="email" placeholder="jane@company.com" autocomplete="email" required></div>
       <div><label for="w">What do you need</label>
         <select id="w" name="need">
-          <option>Free 5-day QA pilot</option><option>QA audit / test strategy</option>
+          <option>Free 3-day QA pilot</option><option>QA audit / test strategy</option>
           <option>Test automation build</option><option>Performance or security testing</option>
           <option>Growth — SEO, content, links</option><option>Website build</option>
         </select>
@@ -426,12 +457,12 @@
       <div>
         <a href="#" class="logo">
           <svg viewBox="0 0 32 32" aria-hidden="true" width="24" height="24"><rect width="32" height="32" rx="6" fill="#FFB224"/><path d="M9 17.2 14 22 23.5 11" stroke="#0A0D12" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Assert Labs
+          Defects Hunter
         </a>
         <p class="foot__t">Independent software quality. We find the bug before your users do — and put the verdict in writing.</p>
       </div>
       <nav aria-label="Footer — services">
-        <h4>Services</h4>
+        <h3 class="foot__h">Services</h3>
         <ul>
           <li><a href="#test">Functional &amp; regression</a></li>
           <li><a href="#test">Test automation</a></li>
@@ -440,18 +471,18 @@
         </ul>
       </nav>
       <nav aria-label="Footer — company">
-        <h4>Company</h4>
+        <h3 class="foot__h">Company</h3>
         <ul>
           <li><a href="#promise">The promise</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="mailto:hello@assertlabs.com">hello@assertlabs.com</a></li>
+          <li><a href="mailto:hello@defectshunter.com">hello@defectshunter.com</a></li>
         </ul>
       </nav>
     </div>
     <div class="foot__bot">
-      <span>© 2026 Assert Labs</span>
-      <span>Independent software quality · Lahore, PK</span>
+      <span>© 2026 Defects Hunter</span>
+      <span>Independent software quality · Dubai, UAE</span>
     </div>
   </div>
 </footer>

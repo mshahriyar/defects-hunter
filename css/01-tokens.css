@@ -36,12 +36,13 @@
   --amber-tint:#FFF7E6;   /* light amber wash */
 
   --pass:#12B76A;         /* semantic: test pass  */
-  --fail:#F5563F;         /* semantic: test fail  */
+  --fail:#F5563F;
+  --fail-ink:#C03A20;         /* semantic: test fail  */
 
   --mut:#5F6672;          /* muted text on light (AA on white) */
-  --mut-2:#9AA1AC;
+  --mut-2:#666F7B;
   --mut-d:rgba(255,255,255,.58);
-  --mut-d2:rgba(255,255,255,.36);
+  --mut-d2:rgba(255,255,255,.5);
 
   /* ---- Type ---- */
   --fd:'Bricolage Grotesque',system-ui,sans-serif;
